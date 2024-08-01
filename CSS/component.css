@@ -16,7 +16,7 @@ body{
     position: relative;
 }
 
-.menu_bar{
+.menu-bar{
     display: flex;
 }
 
@@ -38,7 +38,7 @@ body{
     white-space: nowrap;
 }
 
-.menu_bar .menu:last-child a{
+.menu-bar .menu:last-child a{
     padding-right: 20px;
     font-size: 1em;
     color: #0132b0;
@@ -51,7 +51,7 @@ body{
     .menu a{
         font-size: 1em;
     }
-    .menu_bar .menu:last-child a{
+    .menu-bar .menu:last-child a{
         font-size: 0.8em;
     }
 }
@@ -63,7 +63,7 @@ body{
     .menu a{
         font-size: 0.7em;
     }
-    .menu_bar .menu:last-child a{
+    .menu-bar .menu:last-child a{
         font-size: 0.4em;
     }
 }
