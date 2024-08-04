@@ -12,7 +12,7 @@
 }
 
 .wrap{
-    background-color: rgba(21, 85, 247, 0.609);
+    background-color: rgba(21, 85, 247, 0.299);
     position: relative;
     height: 100%;
 }
@@ -36,7 +36,6 @@
 }
 
 @media (max-width: 1200px) {
-    
     .title {
         font-size: 7em;
     }
