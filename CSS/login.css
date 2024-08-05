@@ -22,6 +22,7 @@ body {
 .input-boxs {
     height: 28vh;
     display: flex;
+    font-size: 0.8em;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -125,7 +126,7 @@ body {
 
 @media (min-width: 1024px) {
     .logo {
-        width: 10vw;
+        width: 15vw;
     }
 
     .inputs {
