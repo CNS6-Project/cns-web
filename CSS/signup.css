@@ -89,6 +89,10 @@ body {
         width: 25vw;
     }
 
+    .input-boxs{
+        height: 35vh;
+    }
+
     .inputs {
         width: 80vw;
         height: 6vh;

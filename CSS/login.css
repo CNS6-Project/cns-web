@@ -98,6 +98,10 @@ body {
     .logo {
         width: 25vw;
     }
+    
+    .input-boxs{
+        height: 23vh;
+    }
 
     .inputs {
         width: 80vw;
@@ -111,6 +115,12 @@ body {
         height: 6vh;
         border-radius: 20px;
         font-size: 1.2em;
+    }
+
+    .Btns {
+        height: 17vh;
+        display: flex;
+        justify-content: space-between;
     }
 
     .foot {
