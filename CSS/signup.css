@@ -1,0 +1,140 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 15vw;
+}
+
+.input-boxs {
+    height: 44vh;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-boxs p {
+    text-align: left;
+    color: #A1A1A1;
+    font-weight: bold;
+    line-height: 0%;
+    font-size: 1.3em;
+    padding-left: 1vw;
+}
+
+.inputs {
+    width: 40vw;
+    height: 8vh;
+    font-size: 1.2em;
+    border-radius: 15px;
+    border: 1px solid #B5B5B5;
+    padding-left: 4vw;
+}
+
+#email {
+    background-image: url(../IMG/person.svg);
+    background-repeat: no-repeat;
+    background-size: 1.2em;
+    background-position: 3.5% 50%;
+}
+
+#password {
+    background-image: url(../IMG/lock.svg);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 3.5% 50%;
+}
+
+.signUpBtn {
+    width: 44vw;
+    height: 8vh;
+    font-size: 1.7vw;
+    background-color: #1556F7;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.Btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot {
+    width: 41vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #A1A1A1;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 25vw;
+    }
+
+    .input-boxs{
+        height: 35vh;
+    }
+
+    .inputs {
+        width: 80vw;
+        height: 6vh;
+        font-size: 1em;
+        padding-left: 10vw;
+    }
+
+    .signUpBtn {
+        width: 90vw;
+        height: 6vh;
+        border-radius: 20px;
+        font-size: 1.2em;
+    }
+
+    .foot {
+        width: 80vw;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        width: 15vw;
+    }
+
+    .inputs {
+        width: 30vw;
+        height: 8vh;
+        font-size: 1.5em;
+        padding-left: 4vw;
+    }
+
+    .signUpBtn {
+        width: 34vw;
+        height: 8vh;
+        font-size: 1.5em;
+    }
+
+    .foot {
+        width: 32vw;
+    }
+
+}

@@ -1,0 +1,145 @@
+.menu-bar .menu:nth-child(3) a{
+    color: #1556F7;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    font-family: 'Pretendard-Regular';
+}
+.body{
+    position: relative;
+    width: 100%;
+}
+.body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../IMG/CNS_Logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    opacity: 0.1;
+    z-index: 0;
+}
+.Creative, .Nurture, .Strive, .Phrases{
+    position: relative;
+    z-index: 1;
+}
+.Creative{
+    color: #003acb;
+    font-size: 96px;
+    margin-left: 400px;
+    z-index: 1;
+}
+.Nurture{
+    -webkit-text-stroke: 0.2px #003acb;
+    color: white;
+    font-size: 96px;
+    margin-left: 800px;
+}
+.Strive{
+    color: #003acb;
+    font-size: 96px;
+    margin-left: 450px;
+}
+.Phrases{
+    margin-left: 1000px;
+    color: #012A8E;
+    font-style:oblique;
+    font-weight: 900;
+}
+.main-body{
+    background: linear-gradient(white, #C7D6FB 50%, #90ADF6);
+}
+.IDA1{
+    margin-top: 357px;
+    display: flex;
+    align-items: center;
+}
+.ida1 {
+    margin-right: 20px;
+}
+.text-container1 {
+    text-align: left;
+    margin-left: 50px;
+}
+.ida-image{
+    margin-left: 50px;
+}
+.title {
+    font-size: 55px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-right: 162px;
+}
+.text-ida {
+    font-size: 200px;
+    background: linear-gradient(to right, #003ACB, #002C98 70%,#001D65);
+    color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    margin-right: 200px;
+}
+.large-text {
+    font-size: 100px;
+    color: #003ACB;
+    font-weight: bolder;
+}
+.small-text{
+    font-size: 40px;
+}
+.firstStep{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.text-ida2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.ida-image2{
+    position: absolute;
+    left: 640px;
+    top: 1830px; 
+    object-fit: cover;
+}
+.medium-text{
+    font-size: 60px;
+    margin-top: 0px;
+}
+
+.text-container2{
+    text-align: left;
+    margin-top: 300px;
+    margin-left: 250px;
+}
+.text-container3{
+    margin-left: 800px;
+    margin-top: 360px;
+}
+.ida-image3{
+    object-fit: cover;
+    top: 2500px;
+    left: 50px;
+    position: absolute;
+}
+.text-container4{
+    margin-left: 200px;
+    margin-top: 330px;
+    float: left;
+}
+.ida-image4{
+    margin-top: 190px;
+    margin-left: 100px;
+}
+.IDA4{
+    margin-top: 70px;
+}
