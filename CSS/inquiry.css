@@ -2,3 +2,67 @@
     color: #1556F7;
     font-weight: bold;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq {
+    width: 80vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.faq_text {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.question {
+    border-bottom: 1px solid #8A8A8A;
+    font-size: 2em;
+}
+
+.blank {
+    height: 25vh;
+}
+
+.inq_head {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.inq_text {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.do_inq {
+    background-color: #1556F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+    width: 9vw;
+    height: 5.5vh;
+    border-radius: 10px;
+}
+
+.do_inq2 {
+    text-decoration: none;
+}
+
+.inquiry {
+    height: 100vh;
+}
+
+.foot_img {
+    width: 100%;
+}
