@@ -6,12 +6,12 @@
     font-family: 'Pretendard-Regular';
 }
 .large-text{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
     color: #003ACB;
 }
 .small-text{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
 }
 .talent{
@@ -20,7 +20,7 @@
 }
 .talent-text{
     margin-left: 250px;
-    font-size: 25px;
+    font-size: 30px;
 }
 .line{
     width: 1000px;
@@ -43,26 +43,72 @@
     text-align: center;
     margin-top: 49px;
 }
-.member{
-    font-size: 40px;
+.cns-member{
     text-align: center;
-    margin-top: 187px;
+    font-size: 40px;
+    margin-top: 180px;
 }
-#number-6th { 
-    display: none; 
+body {
+    font-family: Arial, sans-serif;
 }
-#number-6th:checked ~ .member-6th { 
-    display: block; 
-} 
-.member-6th { 
-    display: none; 
-    list-style: none;
-    margin-left: 450px;
-    font-size: 20px;
+
+.timeline-container {
+    display: flex;
+}
+
+.timeline {
+    flex: 1;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.generation {
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-left: 200px;
+    line-height: 80px;
+    font-size: 40px;
+
+}
+
+.generation:hover{
+    color: #007BFF;
+}
+.member-name{
+    font-size: 30px;
+    font-weight: 100;
+}
+.members-container {
+    flex: 3;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 40px;
     line-height: 50px;
 }
-.people-6th{
-    font-size: 40px;
-    color: #003ACB;
-    margin-left: 250px;
+
+.members {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateX(100%);
+}
+.major{
+    margin-left: 240px;
+}
+.members.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.member {
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+
+.member img {
+    width: 40px;
+    height: 40px;
+    margin-left: 240px;
 }

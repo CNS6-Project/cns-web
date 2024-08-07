@@ -40,7 +40,7 @@ body{
 }
 
 .content-2{
-    margin: 100px 0 100px 0;
+    margin: 300px 0 250px 0;
 }
 
 .slide{
@@ -111,11 +111,87 @@ body{
     margin: 200px 0 100px 0;
 }
 
-.review{
+.content-3 h1{
+    margin: 50px;
+}
+
+.review-container{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80vh;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.review-container::-webkit-scrollbar{
+    display: none;
+}
+
+.review{
+    width: 30vw;
+    height: 15vh;
+    border: 3px solid #5C87F1;
+    border-radius: 45px;
+    box-shadow: gray 3px 3px 7px 1px;
+    line-height: 20px;
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.review:hover{
+    opacity: 1;
+    animation: size 0.7s ease-in-out forwards;
+}
+
+.review:not(:hover){
+    transform: scale(1);
+}
+
+@keyframes size{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+#short-review{
+    flex-basis: 100%;
+}
+
+.review p, h3{
+    margin: 10px;
+}
+
+.content-4{
+    margin: 300px 0 300px 0;
+}
+
+.content-4 h1{
+    text-align: center;
+}
+
+.promotion{
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.promotion img{
+    margin: 20px;
+}
+
+.footer img{
+    width: 100%;
 }
 
 @media (max-width: 1200px) {
