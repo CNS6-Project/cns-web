@@ -1,13 +1,13 @@
-body{
+body {
     overflow-x: hidden;
 }
 
-.menu-bar .menu:first-child a{
+.menu-bar .menu:first-child a {
     color: #1556F7;
     font-weight: bold;
 }
 
-.content-1{
+.content-1 {
     background-image: url(../IMG/main_img.svg);
     background-size: cover;
     background-position: center;
@@ -15,13 +15,13 @@ body{
     height: 100vh;
 }
 
-.wrap{
+.wrap {
     background-color: rgba(21, 85, 247, 0.299);
     position: relative;
     height: 100%;
 }
 
-.title{
+.title {
     color: #ffffff;
     position: absolute;
     font-size: 9em;
@@ -30,102 +30,160 @@ body{
     left: 15%;
 }
 
-.subtitle{
+.title p {
+    margin: 0;
+}
+
+.subtitle {
     color: #ffffff;
     position: absolute;
     font-size: 1.3em;
     z-index: 1;
     top: 50%;
     right: 15%;
+    animation: subtitle 1s 1s ease-in forwards;
+    opacity: 0;
 }
 
-.content-2{
+@keyframes subtitle{
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#C {
+    animation: C 1s ease forwards;
+}
+
+@keyframes C {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+#N {
+    animation: N 1s 0.4s ease forwards;
+}
+
+@keyframes N {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+#S {
+    animation: S 1s 0.8s ease forwards;
+}
+
+@keyframes S {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+.content-2 {
     margin: 300px 0 250px 0;
 }
 
-.slide{
+.slide {
     position: relative;
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
 }
 
-.img-box{
+.img-box {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: transform 1s ease;
 }
 
-.slide-img{
+.slide-img {
     width: 30vw;
     opacity: 0.5;
     margin: 0 60px;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     bottom: 110px;
     width: 3vw;
     cursor: pointer;
 }
 
-.prev{
+.prev {
     left: 425px;
 }
 
-.next{
+.next {
     right: 425px;
 }
 
-.focus{
+.focus {
     opacity: 1;
 }
 
-.dots{
+.dots {
     margin: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.dots div{
+.dots div {
     background-color: #D9D9D9;
 }
 
-.dots .active{
+.dots .active {
     background-color: black;
 }
 
-#dot1{
+#dot1 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     margin-right: 30px;
 }
 
-#dot2{
+#dot2 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     margin-right: 30px;
 }
 
-#dot3{
+#dot3 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
 
-.content-3{
+.content-3 {
     margin: 200px 0 100px 0;
 }
 
-.content-3 h1{
+.content-3 h1 {
     margin: 50px;
 }
 
-.review-container{
+.review-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -136,11 +194,11 @@ body{
     box-sizing: border-box;
 }
 
-.review-container::-webkit-scrollbar{
+.review-container::-webkit-scrollbar {
     display: none;
 }
 
-.review{
+.review {
     width: 30vw;
     height: 15vh;
     border: 3px solid #5C87F1;
@@ -155,52 +213,54 @@ body{
     opacity: 0.3;
 }
 
-.review:hover{
+.review:hover {
     opacity: 1;
     animation: size 0.7s ease-in-out forwards;
 }
 
-.review:not(:hover){
+.review:not(:hover) {
     transform: scale(1);
 }
 
-@keyframes size{
-    from{
+@keyframes size {
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.2);
     }
 }
 
-#short-review{
+#short-review {
     flex-basis: 100%;
 }
 
-.review p, h3{
+.review p,
+h3 {
     margin: 10px;
 }
 
-.content-4{
+.content-4 {
     margin: 300px 0 300px 0;
 }
 
-.content-4 h1{
+.content-4 h1 {
     text-align: center;
 }
 
-.promotion{
+.promotion {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.promotion img{
+.promotion img {
     margin: 20px;
 }
 
-.footer img{
+.footer img {
     width: 100%;
 }
 
@@ -208,15 +268,17 @@ body{
     .title {
         font-size: 7em;
     }
+
     .subtitle {
         font-size: 1.2em;
-    }    
+    }
 }
 
 @media (max-width: 992px) {
     .title {
         font-size: 5em;
     }
+
     .subtitle {
         font-size: 1em;
     }
@@ -226,6 +288,7 @@ body{
     .title {
         font-size: 4em;
     }
+
     .subtitle {
         font-size: 0.9em;
     }
@@ -235,6 +298,7 @@ body{
     .title {
         font-size: 3em;
     }
+
     .subtitle {
         font-size: 0.8em;
         top: 40%;
