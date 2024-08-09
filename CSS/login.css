@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+
 }
 
 .logo {
@@ -159,4 +159,10 @@ body {
     .signUpBtn {
         font-size: 1.3em;
     }
+}
+.aaa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 55vh;
 }
