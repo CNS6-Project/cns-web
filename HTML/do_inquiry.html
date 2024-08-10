@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/CSS/do_inquiry.css">
+    <link rel="stylesheet" href="../CSS/component.css">
+    <link rel="stylesheet" href="../CSS/do_inquiry.css">
 </head>
+
 <body>
-    
+    <div class="header">
+        <div class="logo-container">
+            <a href="../HTML/main.html"><img src="../IMG/CNS_Logo.svg" class="logo"></a>
+        </div>
+        <div>
+            <ul class="menu-bar">
+                <li class="menu"><a href="../HTML/main.html">메인</a></li>
+                <li class="menu"><a href="../HTML/intro.html">소개</a></li>
+                <li class="menu"><a href="../HTML/service.html">서비스</a></li>
+                <li class="menu"><a href="../HTML/inquiry.html">문의</a></li>
+                <li class="menu"><a href="../HTML/login.html">로그인</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap">
+        <h1>문의하기</h1>
+        <form>
+            <input type="text" placeholder="제목을 입력하세요" class="title-input">
+            <textarea placeholder="본문을 입력하세요" class="content-input"></textarea>
+            <button type="submit" class="submit-button">등록하기</button>
+        </form>
+    </div>
 </body>
+
 </html>
