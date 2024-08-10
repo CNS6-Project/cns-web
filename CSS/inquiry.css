@@ -93,3 +93,25 @@
 .show-answer{
     display: block;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+}
+
+.pagination div{
+    font-size: 20px;
+    margin: 0 20px;
+    margin-top: 3px
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
