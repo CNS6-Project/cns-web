@@ -23,8 +23,9 @@
 }
 
 .question {
-    border-bottom: 1px solid #8A8A8A;
-    font-size: 2em;
+    border-bottom: 1px solid #8a8a8aaf;
+    padding-bottom: 10px;
+    font-size: 25px;
 }
 
 .blank {
@@ -65,4 +66,30 @@
 
 .foot_img {
     width: 100%;
+}
+
+.inquirys{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.content{
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #F9F9F9;
+}
+
+.answer{
+    border-left: 1px solid #696969;
+    color: #696969;
+    padding: 15px;
+    display: none;
+}
+
+.show-answer{
+    display: block;
 }
