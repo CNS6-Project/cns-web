@@ -1,8 +1,8 @@
-document.getElementById('inquiryForm').addEventListener('submit', function(event) {
+document.querySelector('.wrap').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const title = document.getElementById('titleInput').value;
-    const content = document.getElementById('contentInput').value;
+    const title = document.querySelector('.title-input').value;
+    const content = document.querySelector('.content-input').value;
 
     const inquiryData = {
         title: title,
