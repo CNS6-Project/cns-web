@@ -6,7 +6,9 @@ body {
     color: #1556F7;
     font-weight: bold;
 }
-
+*{
+    font-family: 'Pretendard-Regular';
+}
 .content-1 {
     background-image: url(../IMG/main_img.svg);
     background-size: cover;
