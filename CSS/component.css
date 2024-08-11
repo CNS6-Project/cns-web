@@ -44,6 +44,12 @@ body{
     color: #0132b0;
 }
 
+.footer img {
+    width: 100%;
+    position: absolute;
+    bottom: 1;
+}
+
 @media (max-width: 768px){
     .menu{
         padding-left: 80px;

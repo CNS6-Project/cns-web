@@ -64,10 +64,6 @@
     height: 100vh;
 }
 
-.foot_img {
-    width: 100%;
-}
-
 .inquirys{
     display: flex;
     flex-direction: column;
