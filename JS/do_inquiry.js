@@ -9,7 +9,7 @@ document.querySelector('.wrap').addEventListener('submit', function(event) {
         content: content
     };
 
-    fetch('', {
+    fetch('http', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

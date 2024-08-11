@@ -46,14 +46,14 @@ body {
 }
 
 #email {
-    background-image: url(../IMG/person.svg);
+    background-image: url(../images/person.svg);
     background-repeat: no-repeat;
     background-size: 1.2em;
     background-position: 3.5% 50%;
 }
 
 #password {
-    background-image: url(../IMG/lock.svg);
+    background-image: url(../images/lock.svg);
     background-repeat: no-repeat;
     background-size: 1em;
     background-position: 3.5% 50%;
