@@ -2,7 +2,9 @@
     color: #1556F7;
     font-weight: bold;
 }
-
+*{
+    font-family: 'Pretendard-Regular';
+}
 .main {
     display: flex;
     flex-direction: column;
