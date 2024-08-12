@@ -28,6 +28,7 @@
     border-bottom: 1px solid #8a8a8aaf;
     padding-bottom: 10px;
     font-size: 25px;
+    cursor: pointer;
 }
 
 .blank {

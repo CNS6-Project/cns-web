@@ -5,9 +5,7 @@ question.forEach((question, index) => {
     question.addEventListener('click', () => {
         answer.forEach((answer, answerIndex) => {
             if (index === answerIndex){
-                answer.classList.add('show-answer')
-            } else {
-                answer.classList.remove('show-answer')
+                answer.classList.toggle('show-answer')
             }
         })
     })
