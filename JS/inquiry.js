@@ -36,7 +36,7 @@ function renderPosts() {
         const postElement = document.createElement('div');
         postElement.className = 'content';
 
-        const titleElement = document.createElement('h2');
+        const titleElement = document.createElement('h3');
         titleElement.textContent = post.title;
 
         postElement.appendChild(titleElement);
