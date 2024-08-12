@@ -72,12 +72,16 @@ body {
     margin-left: 200px;
     line-height: 80px;
     font-size: 40px;
-
 }
 
 .generation:hover{
     color: #007BFF;
 }
+
+.focus{
+    color: #007BFF;
+}
+
 .member-name{
     font-size: 30px;
     font-weight: 100;

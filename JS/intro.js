@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
   
     generations.forEach(gen => {
       gen.addEventListener("click", () => {
+
+        generations.forEach(g => g.classList.remove('focus'));
+        gen.classList.add('focus')
+
         const genId = gen.getAttribute("data-gen");
   
         membersContainers.forEach(container => {

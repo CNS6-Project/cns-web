@@ -11,6 +11,9 @@
 *{
     font-family: 'Pretendard-Regular';
 }
+body{
+    overflow-x: hidden;
+}
 .body{
     position: relative;
     width: 100%;
