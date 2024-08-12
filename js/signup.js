@@ -1,6 +1,9 @@
 const submit = document.querySelector('.submit')
 
-submit.addEventListener('click', () => {
+submit.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const name = document.querySelector('#name').value;
     const email = document.querySelector('#email').value
     const password = document.querySelector('#password').value
     const passwordCheck = document.querySelector('#password-check').value
@@ -11,13 +14,14 @@ submit.addEventListener('click', () => {
     }
 
     const signUpData = {
+        name: name,
         email: email,
         password: password
     };
 
     submit.disabled = true;
 
-    fetch('http', {
+    fetch('http://10.80.161.135:8080/auth/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -26,16 +30,15 @@ submit.addEventListener('click', () => {
     })
 
         .then(response => response.json())
-        .then(data => {
-            console.log('성공:', data);
-            alert('성공');
+        .then(() => {
+            alert('회원가입에 성공하였습니다!')
+            window.location.href = '../html/login.html'
         })
 
-        .catch((error) => {
-            console.error('실패:', error);
-            alert('실패');
+        .catch(() => {
+            alert('회원가입에 실패하였습니다.');
         })
-        
+
         .finally(() => {
                 submit.disabled = false;
             });

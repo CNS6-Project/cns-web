@@ -17,8 +17,7 @@ document.querySelector('.wrap').addEventListener('submit', function(event) {
         body: JSON.stringify(inquiryData)
     })
     .then(response => response.json())
-    .then(data => {
-        console.log('성공:', data);
+    .then(() => {
         alert('문의가 성공적으로 등록되었습니다.');
     })
     .catch((error) => {

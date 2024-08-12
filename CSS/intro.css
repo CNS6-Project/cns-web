@@ -4,6 +4,10 @@
 }
 *{
     font-family: 'Pretendard-Regular';
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
 }
 .large-text{
     font-size: 55px;
