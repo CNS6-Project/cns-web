@@ -25,25 +25,18 @@ submit.addEventListener('click', (event) => {
         },
         body: JSON.stringify(logInData)
     })
-
-        .then(response => {
-            if (response.ok) {
-                return response.json();
-            } else {
-                return response.json().then(errorData => {
-                    throw new Error(errorData.message || '로그인에 실패하였습니다.');
-                });
-            }
-        })
-
-        .then(() => {
+        .then(response => response.json())
+        .then((response) => {
             alert('로그인에 성공하였습니다!');
+
+            console.log(response)
+
+            localStorage.setItem('accessToken', response.accessToken)
+            localStorage.setItem('refreshToken', response.refreshToken)
+            
             window.location.href = '../html/main.html';
         })
         .catch(error => {
             alert(error.message || '로그인에 실패하였습니다.');
         })
-        .finally(() => {
-            submit.disabled = false;
-        });
     });

@@ -9,7 +9,7 @@ document.querySelector('.wrap').addEventListener('submit', function(event) {
         content: content
     };
 
-    fetch('http', {
+    fetch('http://10.80.161.135:8080/swagger-ui/index.html#/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
