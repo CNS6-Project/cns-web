@@ -1,12 +1,15 @@
 const submit = document.querySelector('.submit')
 
-submit.addEventListener('click', (event) => {
-    event.preventDefault();
+submit.addEventListener('click', () => {
 
-    const name = document.querySelector('#name').value;
     const email = document.querySelector('#email').value
     const password = document.querySelector('#password').value
     const passwordCheck = document.querySelector('#password-check').value
+
+    if (!email || !password || !passwordCheck) {
+        alert("모든 필드를 입력해주세요.");
+        return;
+    }
 
     if (password !== passwordCheck) {
         alert("비밀번호가 일치하지 않습니다.")
@@ -14,9 +17,8 @@ submit.addEventListener('click', (event) => {
     }
 
     const signUpData = {
-        name: name,
         email: email,
-        password: password
+        password: password,
     };
 
     submit.disabled = true;
@@ -29,17 +31,23 @@ submit.addEventListener('click', (event) => {
         body: JSON.stringify(signUpData)
     })
 
-        .then(response => response.json())
-        .then(() => {
-            alert('회원가입에 성공하였습니다!')
-            window.location.href = '../html/login.html'
-        })
-
-        .catch(() => {
-            alert('회원가입에 실패하였습니다.');
-        })
-
-        .finally(() => {
-                submit.disabled = false;
+    .then(response => {
+        if (response.ok) {
+            return response.json().catch(() => {
+                return {};
             });
-        })
+        } else {
+            throw new Error('회원가입에 실패하였습니다.');
+        }
+    })
+    .then(() => {
+        alert('회원가입에 성공하였습니다!');
+        window.location.href = '../html/login.html';
+    })
+    .catch((error) => {
+        alert(error.message);
+    })
+    .finally(() => {
+        submit.disabled = false;
+    });
+})

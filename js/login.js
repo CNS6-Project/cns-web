@@ -6,6 +6,11 @@ submit.addEventListener('click', (event) => {
     const email = document.querySelector('#email').value
     const password = document.querySelector('#password').value
 
+    if (!email || !password) {
+        alert("이메일과 비밀번호를 입력해주세요.");
+        return;
+    }
+
     const logInData = {
         email: email,
         password: password,
@@ -21,17 +26,24 @@ submit.addEventListener('click', (event) => {
         body: JSON.stringify(logInData)
     })
 
-        .then(response => response.json())
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                return response.json().then(errorData => {
+                    throw new Error(errorData.message || '로그인에 실패하였습니다.');
+                });
+            }
+        })
+
         .then(() => {
-            alert('로그인에 성공하였습니다!')
-            window.location.href = '../html/main.html'
+            alert('로그인에 성공하였습니다!');
+            window.location.href = '../html/main.html';
         })
-
-        .catch(() => {
-            alert('로그인에 실패하였습니다.');
+        .catch(error => {
+            alert(error.message || '로그인에 실패하였습니다.');
         })
-
         .finally(() => {
-                submit.disabled = false;
-            });
-        })
+            submit.disabled = false;
+        });
+    });
