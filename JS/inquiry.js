@@ -13,12 +13,12 @@ question.forEach((question, index) => {
 
 // 게시글 데이터 예시
 const posts = [
-    { title: "게시글 1", content: "게시글 1 내용입니다." },
-    { title: "게시글 2", content: "게시글 2 내용입니다." },
-    { title: "게시글 3", content: "게시글 3 내용입니다." },
-    { title: "게시글 4", content: "게시글 4 내용입니다." },
-    { title: "게시글 5", content: "게시글 5 내용입니다." },
-    { title: "게시글 6", content: "게시글 6 내용입니다." },
+    { title: "게시글 1"},
+    { title: "게시글 2"},
+    { title: "게시글 3"},
+    { title: "게시글 4"},
+    { title: "게시글 5"},
+    { title: "게시글 6"},
 ];
 
 const postsPerPage = 3; 
@@ -39,11 +39,7 @@ function renderPosts() {
         const titleElement = document.createElement('h2');
         titleElement.textContent = post.title;
 
-        const contentElement = document.createElement('p');
-        contentElement.textContent = post.content;
-
         postElement.appendChild(titleElement);
-        postElement.appendChild(contentElement);
 
         postContainer.appendChild(postElement);
     });
