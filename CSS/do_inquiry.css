@@ -3,7 +3,9 @@
     padding: 50px;
     margin: 0 auto;
 }
-
+*{
+    font-family: 'Pretendard-Regular';
+}
 h1 {
     font-size: 2em;
     margin-bottom: 20px;

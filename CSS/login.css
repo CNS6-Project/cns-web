@@ -6,7 +6,9 @@ body {
     align-items: center;
     text-align: center;
 }
-
+*{
+    font-family: 'Pretendard-Regular';
+}
 .main {
     height: 85vh;
     display: flex;
