@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+
 }
 
 .logo {
@@ -22,6 +22,7 @@ body {
 .input-boxs {
     height: 28vh;
     display: flex;
+    font-size: 0.8em;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -45,14 +46,14 @@ body {
 }
 
 #email {
-    background-image: url(../IMG/person.svg);
+    background-image: url(../images/person.svg);
     background-repeat: no-repeat;
     background-size: 1.2em;
     background-position: 3.5% 50%;
 }
 
 #password {
-    background-image: url(../IMG/lock.svg);
+    background-image: url(../images/lock.svg);
     background-repeat: no-repeat;
     background-size: 1em;
     background-position: 3.5% 50%;
@@ -97,6 +98,10 @@ body {
     .logo {
         width: 30vw;
     }
+    
+    .input-boxs{
+        height: 23vh;
+    }
 
     .inputs {
         width: 80vw;
@@ -110,6 +115,12 @@ body {
         height: 6vh;
         border-radius: 20px;
         font-size: 1.2em;
+    }
+
+    .Btns {
+        height: 17vh;
+        display: flex;
+        justify-content: space-between;
     }
 
     .foot {
@@ -148,4 +159,10 @@ body {
     .signUpBtn {
         font-size: 1.3em;
     }
+}
+.aaa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 55vh;
 }

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문의하기</title>
+    <title>문의</title>
     <link rel="stylesheet" href="../css/component.css">
-    <link rel="stylesheet" href="../css/do_inquiry.css">
+    <link rel="stylesheet" href="../css/inquirys.css">
 </head>
 
 <body>
@@ -25,14 +25,17 @@
         </div>
     </div>
     <div class="wrap">
-        <h1>문의하기</h1>
-        <form>
-            <input type="text" placeholder="제목을 입력하세요" class="title-input">
-            <textarea placeholder="본문을 입력하세요" class="content-input"></textarea>
-            <button type="submit" class="submit-button">등록하기</button>
-        </form>
+        <h1>글제목</h1>
+        <div class="content-input">내용</div>
+        <div class="answer">
+            <h1>답변</h1>
+            <form action="">
+                <textarea placeholder="답변을 입력하세요" class="content-input"></textarea>
+                <button type="submit" class="submit-button">등록하기</button>
+            </form>
+        </div>
     </div>
-    <script src="../js/do_inquiry.js"></script>
+    <script src="../js/inquirys.js"></script>
 </body>
 
 </html>

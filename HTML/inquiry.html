@@ -3,24 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/component.css">
-    <link rel="stylesheet" href="../CSS/inquiry.css">
+    <title>문의</title>
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/inquiry.css">
 </head>
 <body>
     <div class="header">
         <div class="logo-container">
-            <a href="../HTML/main.html"><img src="../IMG/CNS_Logo.svg" class="logo"></a>
+            <a href="../html/main.html"><img src="../images/CNS_Logo.svg" class="logo"></a>
         </div>
         <div>
             <ul class="menu-bar">
-                <li class="menu"><a href="../HTML/main.html">메인</a></li>
-                <li class="menu"><a href="../HTML/intro.html">소개</a></li>
-                <li class="menu"><a href="../HTML/service.html">서비스</a></li>
-                <li class="menu"><a href="../HTML/inquiry.html">문의</a></li>
-                <li class="menu"><a href="../HTML/login.html">로그인</a></li>
+                <li class="menu"><a href="../html/main.html">메인</a></li>
+                <li class="menu"><a href="../html/intro.html">소개</a></li>
+                <li class="menu"><a href="../html/service.html">서비스</a></li>
+                <li class="menu"><a href="../html/inquiry.html">문의</a></li>
+                <li id="login" class="menu"><a href="../html/login.html">로그인</a></li>
             </ul>
         </div>
     </div>
+    <div class="main">
+        <div class="faq_text">자주 묻는 질문</div>
+        <div class="faq">
+            <div class="question">Q. CNS는 어떤 동아리인가요?</div>
+            <div class="answer">A. CNS는 대소고의 입학 원서 접수 사이트를 만드는 동아리입니다.</div>
+            <div class="question">Q. CNS는 언제 창설되었나요?</div>
+            <div class="answer">A. 2019년에 창설되었습니다.</div>
+            <div class="question">Q. 스터디에서는 무엇을 하나요?</div>
+            <div class="answer">A. 선배가 후배들에게 전공 과목을 가르쳐 줍니다.</div>
+            <div class="question">Q. 개발 실력이 부족해도 들어갈 수 있나요?</div>
+            <div class="answer">A. CNS는 개발 실력보다는 인성을 더욱 중시합니다.</div>
+        </div>
+        <div class="blank"></div>
+        <div class="inquiry">
+            <div class="inq_head">
+                <div class="inq_text">문의</div>
+                <a href="../html/do_inquiry.html" class="do_inq2"><div class="do_inq">글쓰기</div></a>
+            </div>
+            <div class="inquirys"></div>
+            <div class="pagination">
+                <button id="prev" onclick="prevPage()">이전</button>
+                <div>1</div>
+                <button id="next" onclick="nextPage()">다음</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="../images/footer.svg" alt="footer" class="foot_img">
+    </div>
+    <script src="../js/inquiry.js"></script>
 </body>
 </html>
