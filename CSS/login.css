@@ -96,7 +96,7 @@ body {
 
 @media (max-width: 768px) {
     .logo {
-        width: 25vw;
+        width: 30vw;
     }
     
     .input-boxs{
@@ -136,7 +136,7 @@ body {
 
 @media (min-width: 1024px) {
     .logo {
-        width: 15vw;
+        width: 13vw;
     }
 
     .inputs {
